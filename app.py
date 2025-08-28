@@ -23,4 +23,4 @@ if st.button("summarize"):
             st.success("✅ خلاصه متن:")
             st.write(summary[0]['summary_text'])
 else:
-    st.info("متن خود را وارد کنید و دکمه 'خلاصه کن' را بزنید.")
+    st.info("Enter your text and click the 'Summarize' button.")
