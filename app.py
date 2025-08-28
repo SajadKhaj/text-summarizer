@@ -1,14 +1,14 @@
 import streamlit as st
 from transformers import pipeline
 
-st.title("📝 خلاصه‌کننده متن هوشمند")
+st.title("📝 Smart Text Summarization")
 
 st.write("Write a full text")
 
 # ورودی متن
-text_input = st.text_area("متن خود را اینجا وارد کنید:", height=300)
+text_input = st.text_area("Enter your text here", height=300)
 
-if st.button("خلاصه کن"):
+if st.button("summarize"):
 
     if not text_input.strip():
         st.warning("لطفاً ابتدا متن را وارد کنید.")
