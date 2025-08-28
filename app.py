@@ -11,9 +11,9 @@ text_input = st.text_area("Enter your text here", height=300)
 if st.button("summarize"):
 
     if not text_input.strip():
-        st.warning("Please enter the text first.")
+        st.warning("لطفا ابتدا متن را وارد کنید.")
     else:
-        with st.spinner("Processing... please wait"):
+        with st.spinner("در حال پردازش... لطفاً صبر کنید"):
             # بارگذاری مدل خلاصه‌سازی
             summarizer = pipeline("summarization")
 
